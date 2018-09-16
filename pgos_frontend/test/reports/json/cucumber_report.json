@@ -1,0 +1,360 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Create a work order",
+    "line": 1,
+    "id": "create-a-work-order",
+    "tags": [],
+    "uri": "features/create-work-order.feature",
+    "elements": [
+      {
+        "id": "create-a-work-order;creating-a-work-order-and-verifying-it-in-the-table",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "creating a work order and verifying it in the table",
+        "tags": [
+          {
+            "name": "@createWorkOrder",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I have loaded the app",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the \"create work order button\" is visible",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on the \"create work order button\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the \"create work order modal\" is visible",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"create work order form\" is visible",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I click on the \"coffee dropdown\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click on the \"first coffee dropdown option\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 334000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I click on the \"brew method dropdown\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 370000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click on the \"first brew method dropdown option\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 357000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I click on the \"ship date input\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 368000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I type \"12/12/2099\" into the \"ship date input\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I click on the \"number of cases input\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I type \"1\" into the \"number of cases input\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I click on the \"number of packets dropdown\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click on the \"first packets dropdown option\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I click on the \"notes input\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 367000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I type \"TEST WORK ORDER NOTES\" into the \"notes input\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I click on the \"priority checkbox\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I click on the \"submit work order button\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the \"create work order modal\" is not visible",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I sort the \"order\" column in \"descending\" order",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I click the \"first row view work order button\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the \"view work order modal\" is visible",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I see the text \"TEST WORK ORDER NOTES\" in the element \"read only notes input\"",
+            "match": {
+              "location": "typeScript/stepdefinitions/shared-step-defs.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "typeScript/support/hooks.js:17"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

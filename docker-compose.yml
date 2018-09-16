@@ -1,0 +1,38 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  pgos_api:
+    build: ./pgos_api
+    command: bundle exec rails s -p 4000 -b '0.0.0.0'
+    volumes:
+      - ./pgos_api:/myapp/pgos_api
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+  pgos_frontend:
+    image: "node:10-alpine"
+    user: "node"
+    working_dir: /myapp/pgos_frontend
+    volumes:
+      - ./pgos_frontend:/myapp/pgos_frontend
+    ports:
+      - "3000:3000"
+    command: "npm start"
+    depends_on:
+      - pgos_api
+  selenium-hub:
+    image: selenium/hub:3.14.0-dubnium
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.14.0-dubnium
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
